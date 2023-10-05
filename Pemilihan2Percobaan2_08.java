@@ -3,7 +3,7 @@ public class Pemilihan2Percobaan2_08 {
     public static void main(String[] args) {
         Scanner input08 = new Scanner(System.in);
 
-        int sudut1, sudut2, sudut3, totalSudut;
+        float sudut1, sudut2, sudut3, totalSudut;
         String jenis;
 
         System.out.print("Masukkan Sudut 1 :");
