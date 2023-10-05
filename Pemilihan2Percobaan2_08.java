@@ -17,10 +17,17 @@ public class Pemilihan2Percobaan2_08 {
 
          if(totalSudut == 180) {
             if((sudut1==90) || (sudut2==90) || (sudut3==90)){
-                System.out.println("Segitiga tersebut adalah segitiga siku siku");
+                jenis = "Segitiga Siku-siku";
+            }else if((sudut1==60) && (sudut2==60) && (sudut3==60)){
+                jenis = "Segitiga Sama Sisi";
+            }else if((sudut1 == sudut2) || (sudut1==sudut3) || (sudut3==sudut2)){
+                jenis = "Segitiga Sama Kaki";
             }else{
-                System.out.println("Segitiga tersebut adalah bukan segitiga siku siku");
+                jenis = "Segitiga Sembarang";
             }
+
+            System.out.println("Segitiga tersebut adalah "+ jenis);
+            
         }else{
             System.out.println("Bukan Segitiga");
         }
